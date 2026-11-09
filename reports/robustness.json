@@ -1,0 +1,150 @@
+{
+  "protocol": "docs/UPGRADE_PROTOCOL.md",
+  "history_features": [
+    "events_7d",
+    "incomplete_7d",
+    "validation_7d",
+    "offers_7d",
+    "resources_7d",
+    "days_since_event",
+    "state_7d"
+  ],
+  "fixed_settings": {
+    "max_leaf_nodes": 7,
+    "max_iter": 150,
+    "learning_rate": 0.05,
+    "l2_regularization": 10
+  },
+  "selection_note": "Ablation and November audit are additional diagnostics. No model settings selected on these outcomes; November operational aggregates were previously inspected.",
+  "results": {
+    "september_october": {
+      "context_model": {
+        "n": 5687,
+        "prevalence": 0.3820995252329875,
+        "roc_auc": 0.6961869175719709,
+        "average_precision": 0.5387056913512773,
+        "brier": 0.20274940172806274,
+        "log_loss": 0.5750141300813036,
+        "top20_precision": 0.5509666080843585,
+        "top20_recall": 0.28854118729866546,
+        "top20_lift": 1.4419452830997455,
+        "review_count": 1138
+      },
+      "history_only": {
+        "n": 5687,
+        "prevalence": 0.3820995252329875,
+        "roc_auc": 0.6638762810830178,
+        "average_precision": 0.5059426183314437,
+        "brier": 0.20722968150251464,
+        "log_loss": 0.5865877677319071,
+        "top20_precision": 0.5026362038664324,
+        "top20_recall": 0.2632305568338702,
+        "top20_lift": 1.3154588547576627,
+        "review_count": 1138
+      },
+      "state_only": {
+        "n": 5687,
+        "prevalence": 0.3820995252329875,
+        "roc_auc": 0.6521564782877562,
+        "average_precision": 0.47545761606416825,
+        "brier": 0.20676966328131835,
+        "log_loss": 0.5856185996336296,
+        "top20_precision": 0.4850615114235501,
+        "top20_recall": 0.25402669121030835,
+        "top20_lift": 1.269463789905996,
+        "review_count": 1138
+      },
+      "week_block_context": {
+        "clusters": 10,
+        "replicates": 500,
+        "roc_auc_95": [
+          0.6789541123751984,
+          0.7133289406532329
+        ],
+        "brier_gain_over_state_95": [
+          0.002661744532218632,
+          0.005411782192209717
+        ],
+        "limitation": "Few calendar clusters; percentile interval is a sensitivity diagnostic, not external validation."
+      },
+      "week_block_history": {
+        "clusters": 10,
+        "replicates": 500,
+        "roc_auc_95": [
+          0.6489028916706557,
+          0.6807174689214347
+        ],
+        "brier_gain_over_state_95": [
+          -0.0016309265746204372,
+          0.0006341178729739482
+        ],
+        "limitation": "Few calendar clusters; percentile interval is a sensitivity diagnostic, not external validation."
+      }
+    },
+    "november_audit": {
+      "context_model": {
+        "n": 2466,
+        "prevalence": 0.36171938361719386,
+        "roc_auc": 0.6712550783186421,
+        "average_precision": 0.4949598751546403,
+        "brier": 0.2039706170368964,
+        "log_loss": 0.5775055857244688,
+        "top20_precision": 0.5020242914979757,
+        "top20_recall": 0.27802690582959644,
+        "top20_lift": 1.3878832991412644,
+        "review_count": 494
+      },
+      "history_only": {
+        "n": 2466,
+        "prevalence": 0.36171938361719386,
+        "roc_auc": 0.6429546697739614,
+        "average_precision": 0.4714562400976763,
+        "brier": 0.2065079569553835,
+        "log_loss": 0.5834287806268995,
+        "top20_precision": 0.4797570850202429,
+        "top20_recall": 0.265695067264574,
+        "top20_lift": 1.3263239592599987,
+        "review_count": 494
+      },
+      "state_only": {
+        "n": 2466,
+        "prevalence": 0.36171938361719386,
+        "roc_auc": 0.636546942752463,
+        "average_precision": 0.4440364253185766,
+        "brier": 0.20580996847396338,
+        "log_loss": 0.5824106800357576,
+        "top20_precision": 0.44534412955465585,
+        "top20_recall": 0.24663677130044842,
+        "top20_lift": 1.2311867976253152,
+        "review_count": 494
+      },
+      "week_block_context": {
+        "clusters": 5,
+        "replicates": 500,
+        "roc_auc_95": [
+          0.651608209716348,
+          0.6865707252283835
+        ],
+        "brier_gain_over_state_95": [
+          -0.001110655651971465,
+          0.004254941936653628
+        ],
+        "limitation": "Few calendar clusters; percentile interval is a sensitivity diagnostic, not external validation."
+      },
+      "week_block_history": {
+        "clusters": 5,
+        "replicates": 500,
+        "roc_auc_95": [
+          0.6244412472627903,
+          0.6547090839835497
+        ],
+        "brier_gain_over_state_95": [
+          -0.002185844108022833,
+          0.0001922891149325657
+        ],
+        "limitation": "Few calendar clusters; percentile interval is a sensitivity diagnostic, not external validation."
+      }
+    }
+  },
+  "recommendation": "Use history-only inputs when creation-time immutability of trace context cannot be established. Predictive differences do not measure intervention effects."
+}

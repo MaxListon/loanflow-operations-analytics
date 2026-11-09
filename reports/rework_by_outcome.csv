@@ -1,0 +1,7 @@
+outcome_label,has_incomplete,n,median_days
+A_Cancelled,False,8014,31.674937702546295
+A_Cancelled,True,825,26.49738835648148
+A_Denied,False,2042,13.042028350694444
+A_Denied,True,1051,17.236352094907406
+A_Pending,False,3946,11.209426747685185
+A_Pending,True,10588,16.874043969907408

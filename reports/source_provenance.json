@@ -1,0 +1,25 @@
+{
+  "is_real_observational_data": true,
+  "synthetic_source_records": 0,
+  "title": "BPI Challenge 2017",
+  "citation": "van Dongen, Boudewijn (2017). BPI Challenge 2017. 4TU.ResearchData. Dataset. https://doi.org/10.4121/uuid:5f3067df-f10b-45da-b98b-86ae4c7a310b",
+  "doi": "10.4121/uuid:5f3067df-f10b-45da-b98b-86ae4c7a310b",
+  "publisher_metadata_url": "https://api.figshare.com/v2/articles/12696884",
+  "publisher_md5": "10b37a2f78e870d78406198403ff13d2",
+  "actual_md5": "10b37a2f78e870d78406198403ff13d2",
+  "checksum_matches": true,
+  "source_sha256": "183c5e5189282779c811c78c33ff936351b3dd201165d612211fc220936f8249",
+  "source_size_bytes": 29658747,
+  "verified_utc": "2026-11-09T11:12:53.131229+00:00",
+  "license": {
+    "value": 98,
+    "name": "4TU General Terms of Use",
+    "url": "https://doi.org/10.4121/resource:terms_of_use"
+  },
+  "record_counts": {
+    "applications": 31509,
+    "events": 1202267,
+    "offers": 42995
+  },
+  "distinction": "Source records, summaries and retrospective predictions use real events. Scenario reductions and treatment effects in pilot planning are explicit assumptions. Synthetic fixtures exist only in tests."
+}

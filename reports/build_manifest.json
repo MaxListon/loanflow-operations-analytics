@@ -1,0 +1,9 @@
+{
+  "built_at_utc": "2026-11-09T11:12:53.256000+00:00",
+  "source_md5": "10b37a2f78e870d78406198403ff13d2",
+  "python": "3.14.10",
+  "duckdb": "2.0.0",
+  "elapsed_seconds": 10.55,
+  "random_seed": 42,
+  "warehouse_sha256": "20177a0e533ba31f150cdb0ad1c6819d3243c5fae664753cb0b1c8f09509dedd"
+}

@@ -1,0 +1,132 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "source_application_count",
+      "violations": 0,
+      "sql": "SELECT abs(count(*)-31509) FROM applications"
+    },
+    {
+      "check": "source_event_count",
+      "violations": 0,
+      "sql": "SELECT abs(count(*)-1202267) FROM events"
+    },
+    {
+      "check": "application_primary_key",
+      "violations": 0,
+      "sql": "SELECT count(*)-count(DISTINCT application_id) FROM applications"
+    },
+    {
+      "check": "event_primary_key",
+      "violations": 0,
+      "sql": "SELECT count(*)-count(DISTINCT (application_id,source_sequence)) FROM events"
+    },
+    {
+      "check": "required_event_fields",
+      "violations": 0,
+      "sql": "SELECT count(*) FROM events WHERE event_time IS NULL OR activity IS NULL OR application_id IS NULL"
+    },
+    {
+      "check": "event_references",
+      "violations": 0,
+      "sql": "SELECT count(*) FROM events e ANTI JOIN applications a USING(application_id)"
+    },
+    {
+      "check": "offer_primary_key",
+      "violations": 0,
+      "sql": "SELECT count(*)-count(DISTINCT offer_id) FROM offers"
+    },
+    {
+      "check": "offer_references",
+      "violations": 0,
+      "sql": "SELECT count(*) FROM events e ANTI JOIN offers o ON e.offer_id=o.offer_id AND e.application_id=o.application_id WHERE e.offer_id IS NOT NULL"
+    },
+    {
+      "check": "valid_requested_amounts",
+      "violations": 0,
+      "sql": "SELECT count(*) FROM applications WHERE requested_amount<0 OR requested_amount IS NULL"
+    },
+    {
+      "check": "mart_grain",
+      "violations": 0,
+      "sql": "SELECT abs((SELECT count(*) FROM application_mart)-(SELECT count(*) FROM applications))"
+    },
+    {
+      "check": "event_reconciliation",
+      "violations": 0,
+      "sql": "SELECT abs((SELECT sum(event_count) FROM application_mart)-(SELECT count(*) FROM events))"
+    },
+    {
+      "check": "offer_reconciliation",
+      "violations": 0,
+      "sql": "SELECT abs((SELECT sum(offer_count) FROM application_mart)-(SELECT count(*) FROM offers))"
+    },
+    {
+      "check": "nonnegative_state_time",
+      "violations": 0,
+      "sql": "SELECT count(*) FROM state_intervals WHERE interval_days<0"
+    },
+    {
+      "check": "state_time_reconciliation",
+      "violations": 0,
+      "sql": "SELECT count(*) FROM (SELECT m.application_id,m.observed_days,sum(s.interval_days) AS days FROM application_mart m JOIN state_intervals s USING(application_id) GROUP BY m.application_id,m.observed_days HAVING abs(days-m.observed_days)>0.00001)"
+    },
+    {
+      "check": "feature_time_boundary",
+      "violations": 0,
+      "sql": "SELECT count(*) FROM landmark_features WHERE latest_feature_at>=landmark_at"
+    },
+    {
+      "check": "label_followup",
+      "violations": 0,
+      "sql": "SELECT count(*) FROM landmark_features WHERE created_at+INTERVAL '30 days'>(SELECT max(event_time) FROM events)"
+    },
+    {
+      "check": "valid_target",
+      "violations": 0,
+      "sql": "SELECT count(*) FROM landmark_features WHERE unresolved_30d NOT IN (0,1)"
+    },
+    {
+      "check": "training_labels_precede_validation",
+      "violations": 0,
+      "sql": "SELECT count(*) FROM landmark_features WHERE split='train' AND created_at+INTERVAL '30 days'>=(SELECT min(landmark_at) FROM landmark_features WHERE split='validation')"
+    },
+    {
+      "check": "validation_labels_precede_test",
+      "violations": 0,
+      "sql": "SELECT count(*) FROM landmark_features WHERE split='validation' AND created_at+INTERVAL '30 days'>=(SELECT min(landmark_at) FROM landmark_features WHERE split='test')"
+    },
+    {
+      "check": "nonnegative_transition_time",
+      "violations": 0,
+      "sql": "SELECT count(*) FROM application_transitions WHERE elapsed_days<0"
+    },
+    {
+      "check": "no_transitions_after_endpoint",
+      "violations": 0,
+      "sql": "SELECT count(*) FROM application_transitions WHERE from_state IN ('A_Pending','A_Denied','A_Cancelled')"
+    },
+    {
+      "check": "variant_application_reconciliation",
+      "violations": 0,
+      "sql": "SELECT abs((SELECT sum(applications) FROM journey_variants)-(SELECT count(*) FROM applications))"
+    },
+    {
+      "check": "pilot_population_reconciliation",
+      "violations": 0,
+      "sql": "SELECT abs((SELECT sum(applications) FROM pilot_baseline)-(SELECT count(*) FROM landmark_features))"
+    },
+    {
+      "check": "pilot_outcome_rate_reconciliation",
+      "violations": 0,
+      "sql": "SELECT count(*) FROM pilot_baseline WHERE abs(resolved_30d_rate-pending_30d_rate-cancelled_30d_rate-denied_30d_rate)>0.0000001"
+    }
+  ],
+  "observations": {
+    "zero_requested_amount_unknown": 3080,
+    "repeated_source_event_ids": 0,
+    "timestamp_inversions_in_source_order": 0,
+    "applications_with_multiple_terminal_states": 1,
+    "unresolved_at_cutoff": 98
+  }
+}

@@ -1,0 +1,102 @@
+path,applications,median_days,pending_endpoint_share
+A_Create Application → A_Submitted → A_Concept → A_Accepted → A_Complete → A_Cancelled,6840,31.918475584490743,0.0
+A_Create Application → A_Submitted → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Pending,2956,14.213785237268517,1.0
+A_Create Application → A_Concept → A_Accepted → A_Complete → A_Cancelled,2467,30.76185738425926,0.0
+A_Create Application → A_Submitted → A_Concept → A_Accepted → A_Complete → A_Validating → A_Pending,2301,11.985134027777777,1.0
+A_Create Application → A_Concept → A_Accepted → A_Complete → A_Validating → A_Pending,2280,10.80926242476852,1.0
+A_Create Application → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Pending,2134,12.973424085648148,1.0
+A_Create Application → A_Submitted → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Pending,1674,17.45703179398148,1.0
+A_Create Application → A_Submitted → A_Concept → A_Accepted → A_Complete → A_Validating → A_Denied,1660,13.832924878472223,0.0
+A_Create Application → A_Submitted → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Pending,1130,19.004580821759262,1.0
+A_Create Application → A_Submitted → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Pending,1075,22.627728298611114,1.0
+A_Create Application → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Pending,900,15.87796599537037,1.0
+A_Create Application → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Pending,736,15.87611736111111,1.0
+A_Create Application → A_Submitted → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Denied,582,17.01233629050926,0.0
+A_Create Application → A_Concept → A_Accepted → A_Complete → A_Validating → A_Denied,567,12.100968472222222,0.0
+A_Create Application → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Pending,525,19.927513252314814,1.0
+A_Create Application → A_Submitted → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Cancelled,397,26.958648703703705,0.0
+A_Create Application → A_Submitted → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Pending,366,27.57096771412037,1.0
+A_Create Application → A_Submitted → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Pending,302,22.899570625,1.0
+A_Create Application → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Denied,289,14.18749417824074,0.0
+A_Create Application → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Pending,229,20.906308715277778,1.0
+A_Create Application → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Cancelled,213,20.026236666666666,0.0
+A_Create Application → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Pending,191,22.73452489583333,1.0
+A_Create Application → A_Submitted → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Cancelled,149,30.243462916666665,0.0
+A_Create Application → A_Submitted → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Denied,130,20.71148271990741,0.0
+A_Create Application → A_Submitted → A_Concept → A_Accepted → A_Complete → A_Denied,99,5.237736493055555,0.0
+A_Create Application → A_Submitted → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Denied,95,14.159164386574075,0.0
+A_Create Application → A_Submitted → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Pending,95,29.808747372685186,1.0
+A_Create Application → A_Submitted → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Pending,94,25.66263425925926,1.0
+A_Create Application → A_Submitted → A_Concept → A_Accepted → A_Cancelled,73,1.826767928240741,0.0
+A_Create Application → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Cancelled,71,25.302856458333334,0.0
+A_Create Application → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Pending,70,24.793273790509257,1.0
+A_Create Application → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Denied,67,18.2552990625,0.0
+A_Create Application → A_Submitted → A_Concept → A_Accepted → A_Complete,48,,
+A_Create Application → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Pending,46,26.658054565972222,1.0
+A_Create Application → A_Submitted → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Cancelled,43,26.666974328703702,0.0
+A_Create Application → A_Submitted → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Denied,41,25.758854097222223,0.0
+A_Create Application → A_Submitted → A_Concept → A_Accepted → A_Complete → A_Validating → A_Cancelled,37,9.638381122685185,0.0
+A_Create Application → A_Concept → A_Accepted → A_Cancelled,37,0.018264328703703703,0.0
+A_Create Application → A_Submitted → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Denied,36,18.576811192129632,0.0
+A_Create Application → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Denied,35,15.083930127314815,0.0
+A_Create Application → A_Concept → A_Accepted → A_Complete → A_Denied,33,5.971652199074074,0.0
+A_Create Application → A_Submitted → A_Concept → A_Accepted → A_Denied,30,1.947977853009259,0.0
+A_Create Application → A_Submitted → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Pending,28,32.92494399884259,1.0
+A_Create Application → A_Submitted → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Pending,24,31.29861851851852,1.0
+A_Create Application → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Cancelled,23,25.240252129629628,0.0
+A_Create Application → A_Concept → A_Accepted → A_Complete → A_Validating → A_Cancelled,22,9.457328686342594,0.0
+A_Create Application → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Denied,21,13.94040863425926,0.0
+A_Create Application → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Pending,19,26.801672546296295,1.0
+A_Create Application → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Pending,18,37.52167038773148,1.0
+A_Create Application → A_Submitted → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete,16,,
+A_Create Application → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Denied,14,15.905689918981482,0.0
+A_Create Application → A_Submitted → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete,13,,
+A_Create Application → A_Submitted → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Cancelled,13,38.89449774305555,0.0
+A_Create Application → A_Submitted → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Denied,12,27.671136597222223,0.0
+A_Create Application → A_Submitted → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Cancelled,10,17.225891348379626,0.0
+A_Create Application → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Cancelled,10,9.427803038194444,0.0
+A_Create Application → A_Submitted → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Denied,10,22.032226192129627,0.0
+A_Create Application → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Denied,7,26.194210613425923,0.0
+A_Create Application → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Denied,7,19.29938818287037,0.0
+A_Create Application → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Pending,7,30.84881893518519,1.0
+A_Create Application → A_Concept → A_Accepted → A_Denied,7,0.011601886574074073,0.0
+A_Create Application → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Cancelled,6,46.53749291087963,0.0
+A_Create Application → A_Submitted → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Pending,6,35.23652597222222,1.0
+A_Create Application → A_Concept → A_Accepted → A_Complete,5,,
+A_Create Application → A_Submitted → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Pending,5,28.927638530092594,1.0
+A_Create Application → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete,5,,
+A_Create Application → A_Submitted → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Cancelled,4,16.04010375,0.0
+A_Create Application → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Cancelled,4,96.03026440393518,0.0
+A_Create Application → A_Submitted → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Denied,3,19.972194016203705,0.0
+A_Create Application → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Cancelled,3,23.986509386574074,0.0
+A_Create Application → A_Submitted → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Cancelled,3,58.16989261574074,0.0
+A_Create Application → A_Submitted → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Denied,3,17.60850596064815,0.0
+A_Create Application → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Pending,3,39.945278854166666,1.0
+A_Create Application → A_Submitted → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Cancelled,2,19.301158541666666,0.0
+A_Create Application → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Denied,2,22.444530555555556,0.0
+A_Create Application → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete,2,,
+A_Create Application → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete,2,,
+A_Create Application → A_Submitted → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Pending,2,53.48104253472222,1.0
+A_Create Application → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Cancelled,2,23.56135078125,0.0
+A_Create Application → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Pending,2,21.4624972337963,1.0
+A_Create Application → A_Submitted → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Denied,1,37.66121813657407,0.0
+A_Create Application → A_Submitted → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Incomplete → A_Pending,1,23.77166457175926,1.0
+A_Create Application → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Pending,1,47.0756218287037,1.0
+A_Create Application → A_Submitted → A_Concept → A_Accepted → A_Complete → A_Validating → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Pending,1,25.937050277777775,1.0
+A_Create Application → A_Submitted → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete,1,,
+A_Create Application → A_Submitted → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Cancelled,1,28.844896666666667,0.0
+A_Create Application → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Incomplete → A_Pending,1,10.8342396875,1.0
+A_Create Application → A_Submitted → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating,1,,
+A_Create Application → A_Submitted → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Validating → A_Pending,1,24.102021620370373,1.0
+A_Create Application → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Denied,1,28.079276226851853,0.0
+A_Create Application → A_Submitted → A_Concept → A_Accepted → A_Complete → A_Validating → A_Validating → A_Incomplete → A_Cancelled,1,16.040462175925928,0.0
+A_Create Application → A_Submitted → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Pending,1,17.349306828703703,1.0
+A_Create Application → A_Submitted → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete,1,,
+A_Create Application → A_Submitted → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete,1,,
+A_Create Application → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Incomplete → A_Validating → A_Incomplete → A_Pending,1,40.824971840277776,1.0
+A_Create Application → A_Submitted → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating,1,,
+A_Create Application → A_Submitted → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete,1,,
+A_Create Application → A_Concept → A_Accepted → A_Complete → A_Validating → A_Validating → A_Incomplete → A_Validating → A_Pending,1,6.8420902777777775,1.0
+A_Create Application → A_Submitted → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating,1,,
+A_Create Application → A_Submitted → A_Concept → A_Accepted → A_Complete → A_Validating → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Pending,1,13.090180775462962,1.0
+A_Create Application → A_Submitted → A_Concept → A_Accepted → A_Complete → A_Validating → A_Incomplete → A_Validating → A_Incomplete → A_Validating → A_Validating → A_Pending,1,14.797466990740741,1.0

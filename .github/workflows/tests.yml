@@ -1,0 +1,50 @@
+name: Analytical and service contracts
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      full_data:
+        description: Rebuild and test the public real-data pipeline
+        type: boolean
+        default: false
+permissions:
+  contents: read
+concurrency:
+  group: checks-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  unit:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ['3.12', '3.14']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m pip install -e '.[dev,api]'
+      - run: python -m pytest -q --junitxml=results.xml
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: results-${{ matrix.python }}
+          path: results.xml
+  container-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker build -t loanflow-api:ci .
+  real-data:
+    if: github.event_name == 'workflow_dispatch' && inputs.full_data
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -e '.[dev,api]'
+      - run: python -m loanflow.pipeline
+      - run: python -m loanflow.release
+      - run: python -m pytest -q

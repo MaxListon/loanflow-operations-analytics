@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "transport": "Actual Uvicorn process over loopback HTTP",
+  "release_id": "lf-48eb16ed2c9a49962868",
+  "real_source_application_id": "Application_1000334415",
+  "event_count": 37,
+  "state_at_day7": "A_Validating",
+  "probability": 0.03396969124933079,
+  "checks": [
+    "ready",
+    "authenticated real-case replay",
+    "unauthenticated rejection",
+    "invalid horizon rejection",
+    "protected metrics",
+    "aggregate monitor"
+  ],
+  "local_concurrency_probe": {
+    "requests": 64,
+    "workers": 8,
+    "successful": 64,
+    "p50_ms": 4.579187516355887,
+    "p95_ms": 9.24829993455205
+  },
+  "limitations": "Local smoke/concurrency probe only, not a sustained load test, hosted benchmark or uptime SLO. No public API deployed."
+}

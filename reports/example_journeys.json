@@ -1,0 +1,468 @@
+[
+  {
+    "label": "Pending endpoint",
+    "application_id": "Application_1000158214",
+    "outcome": "A_Pending",
+    "observed_days": 8.033037430555556,
+    "source_event_count": 25,
+    "offer_count": 1,
+    "incomplete_count": 0,
+    "events": [
+      {
+        "source_sequence": 0,
+        "activity": "A_Create Application",
+        "event_time": "2016-06-02T10:14:26.844Z",
+        "origin": "Application",
+        "lifecycle": "complete",
+        "elapsed_days": 0.0
+      },
+      {
+        "source_sequence": 1,
+        "activity": "A_Submitted",
+        "event_time": "2016-06-02T10:14:26.885Z",
+        "origin": "Application",
+        "lifecycle": "complete",
+        "elapsed_days": 4.745e-07
+      },
+      {
+        "source_sequence": 5,
+        "activity": "A_Concept",
+        "event_time": "2016-06-02T10:15:36.773Z",
+        "origin": "Application",
+        "lifecycle": "complete",
+        "elapsed_days": 0.0008093634
+      },
+      {
+        "source_sequence": 7,
+        "activity": "A_Accepted",
+        "event_time": "2016-06-06T08:10:07.694Z",
+        "origin": "Application",
+        "lifecycle": "complete",
+        "elapsed_days": 3.9136672454
+      },
+      {
+        "source_sequence": 14,
+        "activity": "A_Complete",
+        "event_time": "2016-06-06T08:16:46.892Z",
+        "origin": "Application",
+        "lifecycle": "complete",
+        "elapsed_days": 3.9182875926
+      },
+      {
+        "source_sequence": 19,
+        "activity": "A_Validating",
+        "event_time": "2016-06-09T09:54:36.870Z",
+        "origin": "Application",
+        "lifecycle": "complete",
+        "elapsed_days": 6.9862271528
+      },
+      {
+        "source_sequence": 23,
+        "activity": "A_Pending",
+        "event_time": "2016-06-10T11:02:01.278Z",
+        "origin": "Application",
+        "lifecycle": "complete",
+        "elapsed_days": 8.0330374306
+      }
+    ]
+  },
+  {
+    "label": "Cancelled endpoint",
+    "application_id": "Application_1000086665",
+    "outcome": "A_Cancelled",
+    "observed_days": 32.58559070601852,
+    "source_event_count": 22,
+    "offer_count": 1,
+    "incomplete_count": 0,
+    "events": [
+      {
+        "source_sequence": 0,
+        "activity": "A_Create Application",
+        "event_time": "2016-08-03T15:57:21.673Z",
+        "origin": "Application",
+        "lifecycle": "complete",
+        "elapsed_days": 0.0
+      },
+      {
+        "source_sequence": 1,
+        "activity": "A_Submitted",
+        "event_time": "2016-08-03T15:57:21.734Z",
+        "origin": "Application",
+        "lifecycle": "complete",
+        "elapsed_days": 7.06e-07
+      },
+      {
+        "source_sequence": 5,
+        "activity": "A_Concept",
+        "event_time": "2016-08-03T15:58:28.299Z",
+        "origin": "Application",
+        "lifecycle": "complete",
+        "elapsed_days": 0.0007711343
+      },
+      {
+        "source_sequence": 8,
+        "activity": "A_Accepted",
+        "event_time": "2016-08-05T13:57:07.419Z",
+        "origin": "Application",
+        "lifecycle": "complete",
+        "elapsed_days": 1.9165016898
+      },
+      {
+        "source_sequence": 15,
+        "activity": "A_Complete",
+        "event_time": "2016-08-05T14:01:23.288Z",
+        "origin": "Application",
+        "lifecycle": "complete",
+        "elapsed_days": 1.9194631366
+      },
+      {
+        "source_sequence": 19,
+        "activity": "A_Cancelled",
+        "event_time": "2016-09-05T06:00:36.710Z",
+        "origin": "Application",
+        "lifecycle": "complete",
+        "elapsed_days": 32.585590706
+      }
+    ]
+  },
+  {
+    "label": "Denied endpoint",
+    "application_id": "Application_1000334415",
+    "outcome": "A_Denied",
+    "observed_days": 13.62935869212963,
+    "source_event_count": 40,
+    "offer_count": 1,
+    "incomplete_count": 1,
+    "events": [
+      {
+        "source_sequence": 0,
+        "activity": "A_Create Application",
+        "event_time": "2016-09-15T16:39:17.758Z",
+        "origin": "Application",
+        "lifecycle": "complete",
+        "elapsed_days": 0.0
+      },
+      {
+        "source_sequence": 1,
+        "activity": "A_Submitted",
+        "event_time": "2016-09-15T16:39:17.793Z",
+        "origin": "Application",
+        "lifecycle": "complete",
+        "elapsed_days": 4.051e-07
+      },
+      {
+        "source_sequence": 5,
+        "activity": "A_Concept",
+        "event_time": "2016-09-15T16:39:41.610Z",
+        "origin": "Application",
+        "lifecycle": "complete",
+        "elapsed_days": 0.0002760648
+      },
+      {
+        "source_sequence": 9,
+        "activity": "A_Accepted",
+        "event_time": "2016-09-16T11:31:41.123Z",
+        "origin": "Application",
+        "lifecycle": "complete",
+        "elapsed_days": 0.7863815394
+      },
+      {
+        "source_sequence": 16,
+        "activity": "A_Complete",
+        "event_time": "2016-09-16T11:36:11.643Z",
+        "origin": "Application",
+        "lifecycle": "complete",
+        "elapsed_days": 0.7895125579
+      },
+      {
+        "source_sequence": 23,
+        "activity": "A_Validating",
+        "event_time": "2016-09-21T14:06:51.007Z",
+        "origin": "Application",
+        "lifecycle": "complete",
+        "elapsed_days": 5.8941348264
+      },
+      {
+        "source_sequence": 28,
+        "activity": "A_Incomplete",
+        "event_time": "2016-09-21T14:09:13.104Z",
+        "origin": "Application",
+        "lifecycle": "complete",
+        "elapsed_days": 5.8957794676
+      },
+      {
+        "source_sequence": 35,
+        "activity": "A_Validating",
+        "event_time": "2016-09-22T08:14:44.169Z",
+        "origin": "Application",
+        "lifecycle": "complete",
+        "elapsed_days": 6.6496112384
+      },
+      {
+        "source_sequence": 37,
+        "activity": "A_Denied",
+        "event_time": "2016-09-29T07:45:34.349Z",
+        "origin": "Application",
+        "lifecycle": "complete",
+        "elapsed_days": 13.6293586921
+      }
+    ]
+  },
+  {
+    "label": "Unresolved at cutoff",
+    "application_id": "Application_1061631975",
+    "outcome": "Unresolved at cutoff",
+    "observed_days": 64.67914325231482,
+    "source_event_count": 53,
+    "offer_count": 3,
+    "incomplete_count": 1,
+    "events": [
+      {
+        "source_sequence": 0,
+        "activity": "A_Create Application",
+        "event_time": "2016-11-28T21:53:05.522Z",
+        "origin": "Application",
+        "lifecycle": "complete",
+        "elapsed_days": 0.0
+      },
+      {
+        "source_sequence": 1,
+        "activity": "A_Submitted",
+        "event_time": "2016-11-28T21:53:06.625Z",
+        "origin": "Application",
+        "lifecycle": "complete",
+        "elapsed_days": 1.27662e-05
+      },
+      {
+        "source_sequence": 7,
+        "activity": "A_Concept",
+        "event_time": "2016-11-29T07:01:27.973Z",
+        "origin": "Application",
+        "lifecycle": "complete",
+        "elapsed_days": 0.3808154051
+      },
+      {
+        "source_sequence": 15,
+        "activity": "A_Accepted",
+        "event_time": "2016-12-20T15:05:33.255Z",
+        "origin": "Application",
+        "lifecycle": "complete",
+        "elapsed_days": 21.7169876505
+      },
+      {
+        "source_sequence": 22,
+        "activity": "A_Complete",
+        "event_time": "2016-12-20T15:10:43.279Z",
+        "origin": "Application",
+        "lifecycle": "complete",
+        "elapsed_days": 21.7205758912
+      },
+      {
+        "source_sequence": 32,
+        "activity": "A_Validating",
+        "event_time": "2017-01-18T10:20:49.638Z",
+        "origin": "Application",
+        "lifecycle": "complete",
+        "elapsed_days": 50.5192606019
+      },
+      {
+        "source_sequence": 38,
+        "activity": "A_Incomplete",
+        "event_time": "2017-01-18T11:38:46.458Z",
+        "origin": "Application",
+        "lifecycle": "complete",
+        "elapsed_days": 50.573390463
+      }
+    ]
+  },
+  {
+    "label": "Repeated incomplete-state visits",
+    "application_id": "Application_1001177986",
+    "outcome": "A_Pending",
+    "observed_days": 28.41956997685185,
+    "source_event_count": 74,
+    "offer_count": 1,
+    "incomplete_count": 3,
+    "events": [
+      {
+        "source_sequence": 0,
+        "activity": "A_Create Application",
+        "event_time": "2016-06-23T20:11:52.218Z",
+        "origin": "Application",
+        "lifecycle": "complete",
+        "elapsed_days": 0.0
+      },
+      {
+        "source_sequence": 1,
+        "activity": "A_Submitted",
+        "event_time": "2016-06-23T20:11:53.027Z",
+        "origin": "Application",
+        "lifecycle": "complete",
+        "elapsed_days": 9.3634e-06
+      },
+      {
+        "source_sequence": 5,
+        "activity": "A_Concept",
+        "event_time": "2016-06-23T20:13:07.641Z",
+        "origin": "Application",
+        "lifecycle": "complete",
+        "elapsed_days": 0.0008729514
+      },
+      {
+        "source_sequence": 8,
+        "activity": "A_Accepted",
+        "event_time": "2016-06-25T14:01:30.074Z",
+        "origin": "Application",
+        "lifecycle": "complete",
+        "elapsed_days": 1.7427992593
+      },
+      {
+        "source_sequence": 15,
+        "activity": "A_Complete",
+        "event_time": "2016-06-25T14:08:05.539Z",
+        "origin": "Application",
+        "lifecycle": "complete",
+        "elapsed_days": 1.7473764005
+      },
+      {
+        "source_sequence": 22,
+        "activity": "A_Validating",
+        "event_time": "2016-07-01T13:06:07.606Z",
+        "origin": "Application",
+        "lifecycle": "complete",
+        "elapsed_days": 7.7043447685
+      },
+      {
+        "source_sequence": 31,
+        "activity": "A_Incomplete",
+        "event_time": "2016-07-08T10:09:03.828Z",
+        "origin": "Application",
+        "lifecycle": "complete",
+        "elapsed_days": 14.581384375
+      },
+      {
+        "source_sequence": 42,
+        "activity": "A_Validating",
+        "event_time": "2016-07-10T12:21:02.154Z",
+        "origin": "Application",
+        "lifecycle": "complete",
+        "elapsed_days": 16.6730316667
+      },
+      {
+        "source_sequence": 50,
+        "activity": "A_Incomplete",
+        "event_time": "2016-07-11T09:38:19.846Z",
+        "origin": "Application",
+        "lifecycle": "complete",
+        "elapsed_days": 17.5600419907
+      },
+      {
+        "source_sequence": 59,
+        "activity": "A_Validating",
+        "event_time": "2016-07-13T11:53:20.190Z",
+        "origin": "Application",
+        "lifecycle": "complete",
+        "elapsed_days": 19.6537959722
+      },
+      {
+        "source_sequence": 67,
+        "activity": "A_Incomplete",
+        "event_time": "2016-07-14T08:39:07.911Z",
+        "origin": "Application",
+        "lifecycle": "complete",
+        "elapsed_days": 20.5189316319
+      },
+      {
+        "source_sequence": 72,
+        "activity": "A_Pending",
+        "event_time": "2016-07-22T06:16:03.064Z",
+        "origin": "Application",
+        "lifecycle": "complete",
+        "elapsed_days": 28.4195699769
+      }
+    ]
+  },
+  {
+    "label": "Multiple offers",
+    "application_id": "Application_1001114274",
+    "outcome": "A_Pending",
+    "observed_days": 28.918386817129626,
+    "source_event_count": 69,
+    "offer_count": 5,
+    "incomplete_count": 1,
+    "events": [
+      {
+        "source_sequence": 0,
+        "activity": "A_Create Application",
+        "event_time": "2016-12-15T15:00:49.985Z",
+        "origin": "Application",
+        "lifecycle": "complete",
+        "elapsed_days": 0.0
+      },
+      {
+        "source_sequence": 1,
+        "activity": "A_Submitted",
+        "event_time": "2016-12-15T15:00:51.242Z",
+        "origin": "Application",
+        "lifecycle": "complete",
+        "elapsed_days": 1.45486e-05
+      },
+      {
+        "source_sequence": 5,
+        "activity": "A_Concept",
+        "event_time": "2016-12-15T15:01:33.679Z",
+        "origin": "Application",
+        "lifecycle": "complete",
+        "elapsed_days": 0.0005057176
+      },
+      {
+        "source_sequence": 9,
+        "activity": "A_Accepted",
+        "event_time": "2016-12-15T18:40:26.831Z",
+        "origin": "Application",
+        "lifecycle": "complete",
+        "elapsed_days": 0.1525097917
+      },
+      {
+        "source_sequence": 16,
+        "activity": "A_Complete",
+        "event_time": "2016-12-15T18:54:17.304Z",
+        "origin": "Application",
+        "lifecycle": "complete",
+        "elapsed_days": 0.1621217477
+      },
+      {
+        "source_sequence": 26,
+        "activity": "A_Validating",
+        "event_time": "2016-12-22T12:45:08.276Z",
+        "origin": "Application",
+        "lifecycle": "complete",
+        "elapsed_days": 6.9057672569
+      },
+      {
+        "source_sequence": 33,
+        "activity": "A_Incomplete",
+        "event_time": "2016-12-22T14:23:05.918Z",
+        "origin": "Application",
+        "lifecycle": "complete",
+        "elapsed_days": 6.9737955208
+      },
+      {
+        "source_sequence": 60,
+        "activity": "A_Validating",
+        "event_time": "2017-01-13T09:57:24.681Z",
+        "origin": "Application",
+        "lifecycle": "complete",
+        "elapsed_days": 28.789290463
+      },
+      {
+        "source_sequence": 63,
+        "activity": "A_Pending",
+        "event_time": "2017-01-13T13:03:18.606Z",
+        "origin": "Application",
+        "lifecycle": "complete",
+        "elapsed_days": 28.9183868171
+      }
+    ]
+  }
+]

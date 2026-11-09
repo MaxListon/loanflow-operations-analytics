@@ -1,0 +1,42 @@
+{
+  "test_suite": {
+    "passed": 85,
+    "failed": 0,
+    "includes": [
+      "SQL edge cases",
+      "source checksum rejection",
+      "future-event invariance",
+      "censoring and endpoint semantics",
+      "real-data integration",
+      "five Streamlit views",
+      "API authentication, size/rate/time contracts",
+      "Release integrity, activation and rollback",
+      "Real SQL-to-API parity",
+      "Single-writer build locking"
+    ]
+  },
+  "runtime_integrity_checks": 24,
+  "notebook": {
+    "executed_code_cells": 15,
+    "error_outputs": 0
+  },
+  "browser_checks": [
+    "Standalone dashboard rendered",
+    "Q3 cohort updates cards and outcomes",
+    "Model page displays fixed test population",
+    "Zero-reduction slider reproduces baseline",
+    "No browser console errors observed",
+    "390px overview has no horizontal overflow"
+  ],
+  "notes": [
+    "Third-party pandas deprecation warnings do not affect test results.",
+    "Notebook kernel shutdown emitted a local OS process-inspection permission warning after all cells completed successfully."
+  ],
+  "not_deployed": true,
+  "service": {
+    "api_release_locking_line_coverage_percent": 95,
+    "local_real_server_probe": "reports/service_smoke.json",
+    "docker_locally_tested": false,
+    "live_institution_integration": false
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "method": "Fresh sanitized source directory, no extracted CSVs, no database, no fitted model; rebuilt from checksum-verified original gzip. Existing Python environment reused.",
+  "matching_artifacts": [
+    "model_metrics.json",
+    "robustness.json",
+    "state_bottlenecks.csv",
+    "improvement_scenarios.csv",
+    "pilot_baseline.csv"
+  ],
+  "tolerance": {
+    "relative": 1e-09,
+    "absolute": 1e-10
+  },
+  "fresh_environment_tested": false
+}

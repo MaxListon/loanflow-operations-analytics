@@ -1,0 +1,191 @@
+{
+  "created_at": "2016-09-15T16:39:17.758000+00:00",
+  "as_of": "2016-09-22T16:39:17.758000+00:00",
+  "events": [
+    {
+      "sequence": 0,
+      "timestamp": "2016-09-15T16:39:17.758000+00:00",
+      "activity": "A_Create Application"
+    },
+    {
+      "sequence": 1,
+      "timestamp": "2016-09-15T16:39:17.793000+00:00",
+      "activity": "A_Submitted"
+    },
+    {
+      "sequence": 2,
+      "timestamp": "2016-09-15T16:39:17.950000+00:00",
+      "activity": "W_Handle leads"
+    },
+    {
+      "sequence": 3,
+      "timestamp": "2016-09-15T16:39:41.600000+00:00",
+      "activity": "W_Handle leads"
+    },
+    {
+      "sequence": 4,
+      "timestamp": "2016-09-15T16:39:41.607000+00:00",
+      "activity": "W_Complete application"
+    },
+    {
+      "sequence": 5,
+      "timestamp": "2016-09-15T16:39:41.610000+00:00",
+      "activity": "A_Concept"
+    },
+    {
+      "sequence": 6,
+      "timestamp": "2016-09-16T10:16:13.728000+00:00",
+      "activity": "W_Complete application"
+    },
+    {
+      "sequence": 7,
+      "timestamp": "2016-09-16T10:18:25.724000+00:00",
+      "activity": "W_Complete application"
+    },
+    {
+      "sequence": 8,
+      "timestamp": "2016-09-16T11:23:45.017000+00:00",
+      "activity": "W_Complete application"
+    },
+    {
+      "sequence": 9,
+      "timestamp": "2016-09-16T11:31:41.123000+00:00",
+      "activity": "A_Accepted"
+    },
+    {
+      "sequence": 10,
+      "timestamp": "2016-09-16T11:35:15.403000+00:00",
+      "activity": "O_Create Offer"
+    },
+    {
+      "sequence": 11,
+      "timestamp": "2016-09-16T11:35:15.934000+00:00",
+      "activity": "O_Created"
+    },
+    {
+      "sequence": 12,
+      "timestamp": "2016-09-16T11:36:11.620000+00:00",
+      "activity": "O_Sent (mail and online)"
+    },
+    {
+      "sequence": 13,
+      "timestamp": "2016-09-16T11:36:11.632000+00:00",
+      "activity": "W_Complete application"
+    },
+    {
+      "sequence": 14,
+      "timestamp": "2016-09-16T11:36:11.640000+00:00",
+      "activity": "W_Call after offers"
+    },
+    {
+      "sequence": 15,
+      "timestamp": "2016-09-16T11:36:11.641000+00:00",
+      "activity": "W_Call after offers"
+    },
+    {
+      "sequence": 16,
+      "timestamp": "2016-09-16T11:36:11.643000+00:00",
+      "activity": "A_Complete"
+    },
+    {
+      "sequence": 17,
+      "timestamp": "2016-09-16T11:38:30.411000+00:00",
+      "activity": "W_Call after offers"
+    },
+    {
+      "sequence": 18,
+      "timestamp": "2016-09-20T06:41:51.127000+00:00",
+      "activity": "W_Call after offers"
+    },
+    {
+      "sequence": 19,
+      "timestamp": "2016-09-20T06:42:08.671000+00:00",
+      "activity": "W_Call after offers"
+    },
+    {
+      "sequence": 20,
+      "timestamp": "2016-09-21T14:06:50.226000+00:00",
+      "activity": "W_Call after offers"
+    },
+    {
+      "sequence": 21,
+      "timestamp": "2016-09-21T14:06:50.232000+00:00",
+      "activity": "W_Validate application"
+    },
+    {
+      "sequence": 22,
+      "timestamp": "2016-09-21T14:06:50.234000+00:00",
+      "activity": "W_Validate application"
+    },
+    {
+      "sequence": 23,
+      "timestamp": "2016-09-21T14:06:51.007000+00:00",
+      "activity": "A_Validating"
+    },
+    {
+      "sequence": 24,
+      "timestamp": "2016-09-21T14:06:59.357000+00:00",
+      "activity": "O_Returned"
+    },
+    {
+      "sequence": 25,
+      "timestamp": "2016-09-21T14:09:13.094000+00:00",
+      "activity": "W_Validate application"
+    },
+    {
+      "sequence": 26,
+      "timestamp": "2016-09-21T14:09:13.100000+00:00",
+      "activity": "W_Call incomplete files"
+    },
+    {
+      "sequence": 27,
+      "timestamp": "2016-09-21T14:09:13.102000+00:00",
+      "activity": "W_Call incomplete files"
+    },
+    {
+      "sequence": 28,
+      "timestamp": "2016-09-21T14:09:13.104000+00:00",
+      "activity": "A_Incomplete"
+    },
+    {
+      "sequence": 29,
+      "timestamp": "2016-09-21T14:09:23.400000+00:00",
+      "activity": "W_Call incomplete files"
+    },
+    {
+      "sequence": 30,
+      "timestamp": "2016-09-21T17:26:22.869000+00:00",
+      "activity": "W_Call incomplete files"
+    },
+    {
+      "sequence": 31,
+      "timestamp": "2016-09-21T17:27:46.952000+00:00",
+      "activity": "W_Call incomplete files"
+    },
+    {
+      "sequence": 32,
+      "timestamp": "2016-09-22T08:14:44.108000+00:00",
+      "activity": "W_Call incomplete files"
+    },
+    {
+      "sequence": 33,
+      "timestamp": "2016-09-22T08:14:44.115000+00:00",
+      "activity": "W_Validate application"
+    },
+    {
+      "sequence": 34,
+      "timestamp": "2016-09-22T08:14:44.116000+00:00",
+      "activity": "W_Validate application"
+    },
+    {
+      "sequence": 35,
+      "timestamp": "2016-09-22T08:14:44.169000+00:00",
+      "activity": "A_Validating"
+    },
+    {
+      "sequence": 36,
+      "timestamp": "2016-09-22T08:14:50.121000+00:00",
+      "activity": "W_Validate application"
+    }
+  ]
+}

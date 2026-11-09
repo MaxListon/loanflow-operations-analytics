@@ -1,0 +1,160 @@
+{
+  "definition": "Unresolved by day 30 among applications still open on day 7",
+  "selected_model": "Gradient boosting \u00b7 leaves=7",
+  "features": [
+    "requested_amount",
+    "requested_amount_unknown",
+    "events_7d",
+    "incomplete_7d",
+    "validation_7d",
+    "offers_7d",
+    "resources_7d",
+    "days_since_event",
+    "application_type",
+    "loan_goal",
+    "state_7d"
+  ],
+  "trials": [
+    {
+      "model": "Logistic regression \u00b7 C=0.1",
+      "validation_log_loss": 0.5781702888599335,
+      "validation_auc": 0.7019085795894029
+    },
+    {
+      "model": "Logistic regression \u00b7 C=1.0",
+      "validation_log_loss": 0.5768466391961411,
+      "validation_auc": 0.7022953247863882
+    },
+    {
+      "model": "Logistic regression \u00b7 C=10.0",
+      "validation_log_loss": 0.5767133313711643,
+      "validation_auc": 0.7022337850842617
+    },
+    {
+      "model": "Gradient boosting \u00b7 leaves=7",
+      "validation_log_loss": 0.5743881176739815,
+      "validation_auc": 0.7093310103864163
+    },
+    {
+      "model": "Gradient boosting \u00b7 leaves=15",
+      "validation_log_loss": 0.5745207830586188,
+      "validation_auc": 0.7129822776268169
+    }
+  ],
+  "selection": "Lowest validation log loss; final pipeline kept as fit on training only",
+  "splits": {
+    "train": {
+      "n": 10452,
+      "created_min": "2016-01-01 09:51:15.304000+00:00",
+      "created_max": "2016-05-31 23:24:35.567000+00:00",
+      "prevalence": 0.3705510907003444
+    },
+    "validation": {
+      "n": 2817,
+      "created_min": "2016-07-01 02:57:18.712000+00:00",
+      "created_max": "2016-07-31 21:55:50.887000+00:00",
+      "prevalence": 0.3883564075257366
+    },
+    "test": {
+      "n": 5687,
+      "created_min": "2016-09-01 00:08:46.819000+00:00",
+      "created_max": "2016-10-31 23:10:46.284000+00:00",
+      "prevalence": 0.3820995252329875
+    }
+  },
+  "test": {
+    "n": 5687,
+    "prevalence": 0.3820995252329875,
+    "roc_auc": 0.6961869175719709,
+    "average_precision": 0.5387056913512773,
+    "brier": 0.20274940172806274,
+    "log_loss": 0.5750141300813036,
+    "top20_precision": 0.5509666080843585,
+    "top20_recall": 0.28854118729866546,
+    "top20_lift": 1.4419452830997455,
+    "review_count": 1138
+  },
+  "baseline_test": {
+    "n": 5687,
+    "prevalence": 0.3820995252329875,
+    "roc_auc": 0.5,
+    "average_precision": 0.3820995252329875,
+    "brier": 0.2362328443898678,
+    "log_loss": 0.6653673059255827,
+    "top20_precision": 0.37609841827768015,
+    "top20_recall": 0.19696272434422457,
+    "top20_lift": 0.9842943878256636,
+    "review_count": 1138
+  },
+  "state_baseline_test": {
+    "n": 5687,
+    "prevalence": 0.3820995252329875,
+    "roc_auc": 0.6521564782877562,
+    "average_precision": 0.47545761606416825,
+    "brier": 0.20676966328131835,
+    "log_loss": 0.5856185996336296,
+    "top20_precision": 0.4850615114235501,
+    "top20_recall": 0.25402669121030835,
+    "top20_lift": 1.269463789905996,
+    "review_count": 1138
+  },
+  "logistic_test": {
+    "n": 5687,
+    "prevalence": 0.3820995252329875,
+    "roc_auc": 0.6909417094621971,
+    "average_precision": 0.5325506918792519,
+    "brier": 0.20313117937586556,
+    "log_loss": 0.5770038556800211,
+    "top20_precision": 0.5413005272407733,
+    "top20_recall": 0.2834790612057064,
+    "top20_lift": 1.4166479974313289,
+    "review_count": 1138
+  },
+  "bootstrap_95": {
+    "roc_auc": [
+      0.6810499140369753,
+      0.7087903174098067
+    ],
+    "brier_improvement_over_state_baseline": [
+      0.0024073966121557116,
+      0.005428351279456814
+    ],
+    "replicates": 500,
+    "unit": "application; does not capture calendar-level dependence"
+  },
+  "calibration": [
+    {
+      "predicted": 0.02552205403278376,
+      "observed": 0.013986013986013986
+    },
+    {
+      "predicted": 0.18419909477635552,
+      "observed": 0.16946778711484595
+    },
+    {
+      "predicted": 0.3806740079134298,
+      "observed": 0.42329545454545453
+    },
+    {
+      "predicted": 0.41473434724643365,
+      "observed": 0.45288326300984527
+    },
+    {
+      "predicted": 0.4415331419768209,
+      "observed": 0.44866385372714485
+    },
+    {
+      "predicted": 0.46090344770874714,
+      "observed": 0.45734265734265733
+    },
+    {
+      "predicted": 0.47918721414254495,
+      "observed": 0.5240112994350282
+    },
+    {
+      "predicted": 0.5659951247848617,
+      "observed": 0.5712270803949224
+    }
+  ],
+  "model_note": "Predictive associations, not creditworthiness or causal effects. Logistic coefficients belong to the logistic reference model only."
+}

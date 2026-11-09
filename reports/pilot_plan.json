@@ -1,0 +1,53 @@
+{
+  "population": "Applications still open in A_Complete at day seven, with full observed 30-day follow-up",
+  "historical_baseline": {
+    "state_7d": "A_Complete",
+    "applications": 23181,
+    "resolved_30d_rate": 0.5583883352745783,
+    "pending_30d_rate": 0.4183167249040162,
+    "cancelled_30d_rate": 0.041413226349165264,
+    "denied_30d_rate": 0.09865838402139683
+  },
+  "historical_eligible_per_week": 443.3524590163934,
+  "baseline_note": "Rates measured from mature 2016 applications; future recruitment and performance may differ.",
+  "primary_outcome": "Any first operational endpoint by day 30; report pending, cancelled and denied separately and set customer-outcome guardrails.",
+  "design": "Two-sided alpha .05, power .80, equal independent arms; normal approximation without continuity correction.",
+  "effect_note": "Assumed absolute percentage-point improvements, not measured treatment effects.",
+  "scenarios": [
+    {
+      "assumed_absolute_effect": 0.02,
+      "per_arm": 9627,
+      "total_sample": 19254,
+      "historical_volume_recruitment_weeks": 43.428201667621884,
+      "additional_followup_days": 23
+    },
+    {
+      "assumed_absolute_effect": 0.03,
+      "per_arm": 4266,
+      "total_sample": 8532,
+      "historical_volume_recruitment_weeks": 19.244282571317644,
+      "additional_followup_days": 23
+    },
+    {
+      "assumed_absolute_effect": 0.05,
+      "per_arm": 1525,
+      "total_sample": 3050,
+      "historical_volume_recruitment_weeks": 6.8794024663055335,
+      "additional_followup_days": 23
+    },
+    {
+      "assumed_absolute_effect": 0.08,
+      "per_arm": 589,
+      "total_sample": 1178,
+      "historical_volume_recruitment_weeks": 2.657028231248498,
+      "additional_followup_days": 23
+    },
+    {
+      "assumed_absolute_effect": 0.1,
+      "per_arm": 373,
+      "total_sample": 746,
+      "historical_volume_recruitment_weeks": 1.6826341770045665,
+      "additional_followup_days": 23
+    }
+  ]
+}

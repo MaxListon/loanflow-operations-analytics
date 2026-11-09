@@ -1,0 +1,29 @@
+feature,standardized_log_odds
+categorical__state_7d_A_Incomplete,-1.9396230565112615
+numeric__validation_7d,-1.1160449782900081
+categorical__state_7d_A_Accepted,1.1017740350011997
+categorical__state_7d_A_Concept,1.0071910227324945
+categorical__state_7d_A_Validating,-0.7209384361173228
+categorical__loan_goal_Remaining debt home,0.6762869727169433
+categorical__application_type_Limit raise,-0.6273498192563018
+numeric__incomplete_7d,0.5387637082146234
+categorical__loan_goal_Caravan / Camper,-0.45016753339519994
+categorical__loan_goal_Home improvement,-0.23141911027369683
+"categorical__loan_goal_Other, see explanation",-0.21451012703926825
+categorical__loan_goal_Business goal,-0.1916546700060467
+categorical__loan_goal_Unknown,-0.1806864798998646
+numeric__events_7d,0.155844083545601
+categorical__loan_goal_Boat,0.14470904011243618
+numeric__resources_7d,-0.134192860747239
+categorical__loan_goal_Motorcycle,0.13141109539789927
+categorical__loan_goal_Existing loan takeover,-0.11041578770056455
+categorical__loan_goal_Car,-0.1022432933175314
+categorical__application_type_New credit,0.09545835893776469
+numeric__offers_7d,-0.05994389938242704
+categorical__loan_goal_Extra spending limit,0.05591745043462214
+numeric__days_since_event,0.04988060423923645
+categorical__loan_goal_Tax payments,-0.04815647562407584
+numeric__requested_amount_unknown,0.031298281539267336
+categorical__state_7d_A_Complete,0.019704974576364616
+categorical__loan_goal_Not speficied,-0.010962541724190202
+numeric__requested_amount,-0.0024836239573995836

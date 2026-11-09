@@ -1,0 +1,81 @@
+{
+  "applications": 31509,
+  "events": 1202267,
+  "offers": 42995,
+  "resolved": 31411,
+  "censored": 98,
+  "median_resolution_days": 19.067681747685185,
+  "p90_resolution_days": 34.98701479166667,
+  "incomplete_rate": 0.47614967152242216,
+  "outcomes": {
+    "A_Pending": 17228,
+    "A_Cancelled": 10431,
+    "A_Denied": 3752,
+    "Unresolved at cutoff": 98
+  },
+  "source_cutoff": "2017-02-01 14:11:03.499000+00:00",
+  "top_state": {
+    "activity": "A_Complete",
+    "applications": 31264,
+    "median_days": 9.965707528935184,
+    "p90_days": 30.821470752314816,
+    "total_days": 478974.82814812224,
+    "share_of_elapsed": 0.6979423109296149
+  },
+  "rework_comparison": {
+    "with_incomplete_n": 12464,
+    "without_incomplete_n": 14002,
+    "with_incomplete_median": 17.140044195601853,
+    "without_incomplete_median": 30.203344739583336,
+    "difference_days": -13.063300543981484,
+    "ci95": [
+      -13.497054502604165,
+      -10.757535785156252
+    ],
+    "iterations": 1000,
+    "interpretation": "Observational difference among resolved Jan\u2013Oct applications. Selection, case complexity and longer time at risk can explain the association; not an effect of rework."
+  },
+  "scenarios": [
+    {
+      "reduction": 0,
+      "applications": 31411,
+      "affected_applications": 31264,
+      "median_days": 19.067681747685185,
+      "p90_days": 34.98701479166667,
+      "application_days_removed": 0.0,
+      "mean_days_removed_per_application": 0.0,
+      "resolved_within_30d_share": 0.6501544045079749
+    },
+    {
+      "reduction": 0.1,
+      "applications": 31411,
+      "affected_applications": 31264,
+      "median_days": 18.09680133101852,
+      "p90_days": 32.615692090277776,
+      "application_days_removed": 47897.4828148125,
+      "mean_days_removed_per_application": 1.5248633540738117,
+      "resolved_within_30d_share": 0.842698417751743
+    },
+    {
+      "reduction": 0.25,
+      "applications": 31411,
+      "affected_applications": 31264,
+      "median_days": 16.461839186921296,
+      "p90_days": 29.191147291666667,
+      "application_days_removed": 119743.70703703124,
+      "mean_days_removed_per_application": 3.812158385184529,
+      "resolved_within_30d_share": 0.9079303428735156
+    },
+    {
+      "reduction": 0.5,
+      "applications": 31411,
+      "affected_applications": 31264,
+      "median_days": 13.618073726851852,
+      "p90_days": 24.01290499421296,
+      "application_days_removed": 239487.4140740625,
+      "mean_days_removed_per_application": 7.624316770369058,
+      "resolved_within_30d_share": 0.948616726624431
+    }
+  ],
+  "scenario_caveat": "Mechanical compression of observed A_Complete intervals among resolved cases only; no capacity feedback, changed outcomes or staff time modeled. Not a causal forecast or realized saving."
+}

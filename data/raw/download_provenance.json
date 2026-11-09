@@ -1,0 +1,9 @@
+{
+  "download_url": "https://raw.githubusercontent.com/Patrick-Megard/ProcessMining-Loans/main/Datasets/BPI%20Challenge%202017.xes.gz",
+  "publisher_download_url": "https://ndownloader.figshare.com/files/24044117",
+  "fallback_reason": "Publisher download returned HTTP 504 during this build",
+  "md5": "10b37a2f78e870d78406198403ff13d2",
+  "publisher_article_id": 12696884,
+  "publisher_file_id": 24044117,
+  "verified_against_publisher_metadata": true
+}
