@@ -38,9 +38,11 @@ An end-to-end portfolio project built with **Python, DuckDB SQL, scikit-learn, P
 - **Calendar uncertainty:** Creation-week cluster bootstrap and monthly performance/capacity diagnostics.
 - **Pilot planning:** Measured baseline from **23,181 eligible cases**, with sample-size calculations for explicitly assumed effects. A hypothetical five-percentage-point effect requires about **1,525 cases per arm** under the stated normal approximation.
 - **Source-to-report audit:** Publisher checksum, source SHA-256, cached-extraction hashes and artifact fingerprints. Corrupted cached CSVs trigger a rebuild.
-- **Validation:** 86 tests and 24 runtime integrity checks, including all seven Streamlit views.
+- **Validation:** 89 tests and 24 runtime integrity checks, including all seven Streamlit views.
 
 See [the fixed extension protocol](docs/UPGRADE_PROTOCOL.md), [robustness results](reports/robustness.json) and [real-data evidence](reports/source_provenance.json).
+
+**[Verified Linux checks: real-data rebuild, Python 3.12/3.14 tests, image build and non-root container replay](https://github.com/MaxListon/loanflow-operations-analytics/actions/runs/42610624848)**
 
 ## Hardened replay service
 
@@ -57,7 +59,7 @@ python -m loanflow.release
 python scripts/smoke_service.py
 ```
 
-The API/release/locking modules have **95% measured line coverage** in the local suite. Docker and GitHub CI configuration are provided. The Linux image build and full real-data rebuild passed in GitHub CI; Docker is unavailable locally. this is a hardened historical-replay/pilot scaffold, not a certified live banking production deployment.
+The API/release/locking modules have **95% measured line coverage** in the local suite. Docker and GitHub CI configuration are provided. The Linux image build and full real-data rebuild passed in GitHub CI; Docker is unavailable locally. This is a hardened historical-replay/pilot scaffold, not a certified live banking production deployment.
 
 ## Reproduce the project
 
@@ -66,7 +68,7 @@ Python 3.11+ is declared; the delivered build was tested with Python 3.14 on mac
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
-python -m pip install -e '.[dev]'
+python -m pip install -e '.[dev,api]'
 python -m loanflow.pipeline
 python -m pytest -q
 # Optional cold-source reproduction check (reuses installed Python libraries):
@@ -84,19 +86,7 @@ The executed notebook at `notebooks/01_decision_analysis.ipynb` includes real qu
 
 ## Architecture
 
-```mermaid
-flowchart LR
-    A[Official XES event log] --> B[Checksum verification]
-    B --> C[Streaming Python parser]
-    C --> D[Typed DuckDB raw tables]
-    D --> E[Application and offer marts]
-    E --> F[State intervals and backlog]
-    E --> G[Day-seven landmark features]
-    F --> H[Descriptive analysis and scenarios]
-    G --> I[Temporal model comparison]
-    H --> J[Interactive dashboard and decision memo]
-    I --> J
-```
+![LoanFlow source-to-decision architecture](docs/architecture.svg)
 
 The application mart has one row per application. Offers are aggregated before joining. Application-state time is built from application events only, capped at the first operational endpoint. Raw workflow events remain available for audit; they are not misinterpreted as independent process stages.
 
@@ -111,7 +101,7 @@ loanflow/
   tests/                Synthetic edge cases and real-data integration tests
   reports/              Findings, metrics, predictions and audit evidence
   docs/                 Definitions, model card, presentation and study roadmap
-  data/raw/             Original source and provenance (excluded from Git)
+  data/raw/             Original source + metadata (raw records excluded)
   data/processed/       DuckDB database, extracted CSVs and model (excluded from Git)
 ```
 

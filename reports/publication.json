@@ -12,5 +12,34 @@
     "Full real-data build, release creation and tests success"
   ],
   "public_api_deployed": false,
-  "container_runtime_check": "Added for the next source-code CI run; not yet verified at this snapshot."
+  "container_runtime_check": "Passed: non-root read-only Linux container readiness and authenticated replay of real source history",
+  "verified_source_commit": "8f3f6d26aa05eba3a329c414cb8ea6766d069292",
+  "final_complete_checks": "https://github.com/MaxListon/loanflow-operations-analytics/actions/runs/42610624848",
+  "verified_jobs": [
+    {
+      "name": "real-data",
+      "conclusion": "success",
+      "url": "https://github.com/MaxListon/loanflow-operations-analytics/actions/runs/42610624848/job/129137804146"
+    },
+    {
+      "name": "unit (3.14)",
+      "conclusion": "success",
+      "url": "https://github.com/MaxListon/loanflow-operations-analytics/actions/runs/42610624848/job/129137804385"
+    },
+    {
+      "name": "container-build",
+      "conclusion": "success",
+      "url": "https://github.com/MaxListon/loanflow-operations-analytics/actions/runs/42610624848/job/129137804506"
+    },
+    {
+      "name": "unit (3.12)",
+      "conclusion": "success",
+      "url": "https://github.com/MaxListon/loanflow-operations-analytics/actions/runs/42610624848/job/129137804652"
+    },
+    {
+      "name": "container-smoke",
+      "conclusion": "success",
+      "url": "https://github.com/MaxListon/loanflow-operations-analytics/actions/runs/42610624848/job/129138580657"
+    }
+  ]
 }

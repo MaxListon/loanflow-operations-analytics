@@ -1,6 +1,6 @@
 {
   "test_suite": {
-    "passed": 86,
+    "passed": 89,
     "failed": 0,
     "includes": [
       "SQL edge cases",
@@ -12,7 +12,9 @@
       "API authentication, size/rate/time contracts",
       "Release integrity, activation and rollback",
       "Real SQL-to-API parity",
-      "Single-writer build locking"
+      "Single-writer build locking",
+      "Docker readiness reset regression",
+      "Malformed bearer authentication regression"
     ]
   },
   "runtime_integrity_checks": 24,
@@ -32,13 +34,15 @@
     "Third-party pandas deprecation warnings do not affect test results.",
     "Notebook kernel shutdown emitted a local OS process-inspection permission warning after all cells completed successfully."
   ],
-  "not_deployed": true,
+  "not_deployed": false,
   "service": {
     "api_release_locking_line_coverage_percent": 95,
     "local_real_server_probe": "reports/service_smoke.json",
     "docker_locally_tested": false,
     "live_institution_integration": false,
     "github_linux_image_build_passed": true,
-    "github_linux_real_data_rebuild_passed": true
-  }
+    "github_linux_real_data_rebuild_passed": true,
+    "github_nonroot_container_replay_passed": true
+  },
+  "deployment_scope": "Public historical dashboard deployed on GitHub Pages; replay API packaged and tested but not publicly deployed"
 }

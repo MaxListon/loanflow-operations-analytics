@@ -7,6 +7,7 @@ Implemented and tested locally:
 - Authenticated API with strict point-in-time request checks and historical scope enforcement.
 - Content-verified JSON releases, startup failure behavior, atomic activation, rollback and writer exclusion.
 - Actual Uvicorn loopback replay plus a bounded 64-request/eight-client concurrency probe.
+- GitHub Linux real-data rebuild, Python 3.12/3.14 tests, Docker image build, and non-root/read-only container real-case replay.
 - API/release tests, structured log redaction, request-size/rate limits and aggregate monitoring.
 
 Provided, but not claimed as locally/operationally verified:

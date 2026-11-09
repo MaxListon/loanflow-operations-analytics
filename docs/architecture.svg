@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="280" viewBox="0 0 1280 280" role="img" aria-label="LoanFlow architecture from real source data through SQL analysis and verified serving releases">
+<rect width="1280" height="280" rx="16" fill="#f4f6f9"/>
+<defs><marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7" fill="#8b9eb3"/></marker></defs>
+<text x="30" y="44" fill="#15283e" font-family="Arial,sans-serif" font-size="24" font-weight="700">LoanFlow · Source-to-decision architecture</text>
+<rect x="30" y="82" width="216" height="116" rx="10" fill="white" stroke="#cfd9e5"/>
+<text x="46" y="114" fill="#244de0" font-family="Arial,sans-serif" font-size="17" font-weight="700">Real event log</text>
+<text x="46" y="146" fill="#62748a" font-family="Arial,sans-serif" font-size="12">BPI Challenge 2017</text>
+<text x="46" y="169" fill="#62748a" font-family="Arial,sans-serif" font-size="12">Checksum + source hashes</text>
+<path d="M248,140 H272" stroke="#8b9eb3" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="276" y="82" width="216" height="116" rx="10" fill="white" stroke="#cfd9e5"/>
+<text x="292" y="114" fill="#244de0" font-family="Arial,sans-serif" font-size="17" font-weight="700">SQL reporting</text>
+<text x="292" y="146" fill="#62748a" font-family="Arial,sans-serif" font-size="12">Application / offer marts</text>
+<text x="292" y="169" fill="#62748a" font-family="Arial,sans-serif" font-size="12">Temporal metric contracts</text>
+<path d="M494,140 H518" stroke="#8b9eb3" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="522" y="82" width="216" height="116" rx="10" fill="white" stroke="#cfd9e5"/>
+<text x="538" y="114" fill="#244de0" font-family="Arial,sans-serif" font-size="17" font-weight="700">Decision evidence</text>
+<text x="538" y="146" fill="#62748a" font-family="Arial,sans-serif" font-size="12">Process + model evaluation</text>
+<text x="538" y="169" fill="#62748a" font-family="Arial,sans-serif" font-size="12">Uncertainty + pilot design</text>
+<path d="M740,140 H764" stroke="#8b9eb3" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="768" y="82" width="216" height="116" rx="10" fill="white" stroke="#cfd9e5"/>
+<text x="784" y="114" fill="#244de0" font-family="Arial,sans-serif" font-size="17" font-weight="700">Verified releases</text>
+<text x="784" y="146" fill="#62748a" font-family="Arial,sans-serif" font-size="12">Immutable JSON model</text>
+<text x="784" y="169" fill="#62748a" font-family="Arial,sans-serif" font-size="12">Atomic activation / rollback</text>
+<path d="M986,140 H1010" stroke="#8b9eb3" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="1014" y="82" width="216" height="116" rx="10" fill="white" stroke="#cfd9e5"/>
+<text x="1030" y="114" fill="#244de0" font-family="Arial,sans-serif" font-size="17" font-weight="700">Demo + replay API</text>
+<text x="1030" y="146" fill="#62748a" font-family="Arial,sans-serif" font-size="12">Public historical dashboard</text>
+<text x="1030" y="169" fill="#62748a" font-family="Arial,sans-serif" font-size="12">Authenticated scoped service</text>
+<text x="30" y="242" fill="#62748a" font-family="Arial,sans-serif" font-size="13">Historical evidence, explicit assumptions, reproducible artifacts · No live bank integration or proven intervention savings</text></svg>
