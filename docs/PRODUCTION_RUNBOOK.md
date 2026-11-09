@@ -4,7 +4,7 @@
 
 The analytics, API and release system are implemented and locally tested. The service replays historical operational-support scores using a smoothed state-only baseline. It **does not approve credit**, prove intervention benefit or validate lending decisions. The release permits 2016 creation cohorts only; new cohorts require a newly trained and validated release with an appropriate scope.
 
-A local smoke/concurrency probe is not a production load test or availability guarantee. Docker and CI configurations are provided; a local Docker build was not run because Docker was unavailable. A fresh operating-system dependency installation and hosted CI results must be checked before treating the deployment as verified.
+A local smoke/concurrency probe is not a production load test or availability guarantee. The Docker image build, Python 3.12/3.14 test jobs, and full real-data rebuild with release creation passed in GitHub Linux CI. A local Docker build was not run because Docker was unavailable. Hosted container-runtime smoke results are recorded separately in publication evidence. Sustained hosted operation is not established.
 
 ## Start locally
 

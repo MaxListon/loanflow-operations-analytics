@@ -38,7 +38,7 @@ An end-to-end portfolio project built with **Python, DuckDB SQL, scikit-learn, P
 - **Calendar uncertainty:** Creation-week cluster bootstrap and monthly performance/capacity diagnostics.
 - **Pilot planning:** Measured baseline from **23,181 eligible cases**, with sample-size calculations for explicitly assumed effects. A hypothetical five-percentage-point effect requires about **1,525 cases per arm** under the stated normal approximation.
 - **Source-to-report audit:** Publisher checksum, source SHA-256, cached-extraction hashes and artifact fingerprints. Corrupted cached CSVs trigger a rebuild.
-- **Validation:** 85 tests and 24 runtime integrity checks, including all seven Streamlit views.
+- **Validation:** 86 tests and 24 runtime integrity checks, including all seven Streamlit views.
 
 See [the fixed extension protocol](docs/UPGRADE_PROTOCOL.md), [robustness results](reports/robustness.json) and [real-data evidence](reports/source_provenance.json).
 
@@ -57,7 +57,7 @@ python -m loanflow.release
 python scripts/smoke_service.py
 ```
 
-The API/release/locking modules have **95% measured line coverage** in the local suite. Docker and GitHub CI configuration are provided. A local container build is unverified because Docker is unavailable; this is a hardened historical-replay/pilot scaffold, not a certified live banking production deployment.
+The API/release/locking modules have **95% measured line coverage** in the local suite. Docker and GitHub CI configuration are provided. The Linux image build and full real-data rebuild passed in GitHub CI; Docker is unavailable locally. this is a hardened historical-replay/pilot scaffold, not a certified live banking production deployment.
 
 ## Reproduce the project
 

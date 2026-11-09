@@ -1,0 +1,16 @@
+{
+  "repository": "https://github.com/MaxListon/loanflow-operations-analytics",
+  "dashboard": "https://maxliston.github.io/loanflow-operations-analytics/",
+  "dashboard_exact_build_match": true,
+  "initial_checks": "https://github.com/MaxListon/loanflow-operations-analytics/actions/runs/42608627479",
+  "full_real_data_checks": "https://github.com/MaxListon/loanflow-operations-analytics/actions/runs/42609108292",
+  "pages_deployment": "https://github.com/MaxListon/loanflow-operations-analytics/actions/runs/42608792274",
+  "checks_observed": [
+    "Python 3.12 unit/service tests success",
+    "Python 3.14 unit/service tests success",
+    "Linux Docker image build success",
+    "Full real-data build, release creation and tests success"
+  ],
+  "public_api_deployed": false,
+  "container_runtime_check": "Added for the next source-code CI run; not yet verified at this snapshot."
+}

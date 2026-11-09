@@ -99,3 +99,13 @@ def test_real_api_request_replays_the_same_sql_state_probability():
     row=training[training.state_7d==result.json()['state_at_day7']].iloc[0]
     expected=(row.positive+20*prevalence)/(row.n+20)
     assert result.json()['unresolved_by_day30_probability']==pytest.approx(expected)
+
+
+def test_release_has_readable_permissions_for_nonroot_container(tmp_path):
+    import os,stat
+    if os.name!='posix':pytest.skip('POSIX permission contract')
+    from loanflow.release import create_release
+    store=tmp_path/'releases';rid=create_release(ROOT,store)
+    assert stat.S_IMODE((store/'CURRENT').stat().st_mode)==0o644
+    assert stat.S_IMODE((store/rid).stat().st_mode)==0o755
+    assert all(stat.S_IMODE(p.stat().st_mode)==0o644 for p in (store/rid).iterdir())

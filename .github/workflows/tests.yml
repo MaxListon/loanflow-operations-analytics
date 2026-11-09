@@ -1,7 +1,9 @@
 name: Analytical and service contracts
 on:
   push:
+    paths-ignore: ['**.md', 'docs/**', 'reports/**', 'notebooks/**']
   pull_request:
+    paths-ignore: ['**.md', 'docs/**', 'reports/**', 'notebooks/**']
   workflow_dispatch:
     inputs:
       full_data:
@@ -37,7 +39,7 @@ jobs:
       - uses: actions/checkout@v4
       - run: docker build -t loanflow-api:ci .
   real-data:
-    if: github.event_name == 'workflow_dispatch' && inputs.full_data
+    if: github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.full_data)
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -48,3 +50,26 @@ jobs:
       - run: python -m loanflow.pipeline
       - run: python -m loanflow.release
       - run: python -m pytest -q
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: verified-replay-release
+          path: |
+            releases/
+            reports/real_replay_request.json
+  container-smoke:
+    if: github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.full_data)
+    needs: [real-data, container-build]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/download-artifact@v4
+        with:
+          name: verified-replay-release
+          path: .
+      - run: docker build -t loanflow-api:ci .
+      - run: chmod -R a+rX releases
+      - run: python scripts/smoke_container.py

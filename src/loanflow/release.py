@@ -50,6 +50,7 @@ def activate(releases,release_id):
     fd,temp=tempfile.mkstemp(prefix='.current-',dir=releases)
     try:
         with os.fdopen(fd,'w') as out:out.write(release_id+'\n');out.flush();os.fsync(out.fileno())
+        os.chmod(temp,0o644)  # Aggregate public-data model metadata; readable by container UID 10001.
         os.replace(temp,releases/'CURRENT')
     finally:
         if Path(temp).exists():Path(temp).unlink()
@@ -96,6 +97,8 @@ def create_release(root,releases=None):
            'created_at_utc':datetime.now(timezone.utc).isoformat()}
         (stage/'manifest.json').write_text(json.dumps(manifest,indent=2))
         verify_release(stage)
+        os.chmod(stage,0o755)
+        for path in stage.iterdir():os.chmod(path,0o644)
         destination=releases/release_id
         if destination.exists():verify_release(destination)
         else:os.replace(stage,destination)
