@@ -101,7 +101,7 @@ def create_app(settings=None):
 
     async def authorized(request:Request,credential:Annotated[HTTPAuthorizationCredentials|None,Depends(bearer)]):
         runtime=request.app.state.runtime
-        if credential is None or credential.scheme.lower()!='bearer' or not hmac.compare_digest(credential.credentials,runtime.settings.api_key):
+        if credential is None or credential.scheme.lower()!='bearer' or not hmac.compare_digest(credential.credentials.encode("utf-8"),runtime.settings.api_key.encode("utf-8")):
             raise HTTPException(401,'Authentication required',headers={'WWW-Authenticate':'Bearer'})
         if not runtime.admit():raise HTTPException(429,'Request limit reached',headers={'Retry-After':'60'})
         return runtime

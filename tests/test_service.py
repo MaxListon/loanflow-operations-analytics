@@ -208,3 +208,8 @@ def test_release_builder_rejects_missing_extraction_manifest(tmp_path):
     from loanflow.release import create_release
     (tmp_path/'reports').mkdir();(tmp_path/'reports/data_quality.json').write_text(json.dumps({'passed':True,'checks':[]}))
     with pytest.raises(ValueError,match='extraction'):create_release(tmp_path)
+
+
+def test_non_ascii_invalid_bearer_is_rejected_without_server_error(client,payload):
+    response=client.post('/v1/score',json=payload,headers=[(b'Authorization',b'Bearer \xff')])
+    assert response.status_code==401
