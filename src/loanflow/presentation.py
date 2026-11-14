@@ -45,6 +45,9 @@ def build_demo(con,root,summary,model,quality):
     template=(root/'dashboard/template.html').read_text()
     html=template.replace('/*PLOTLY_LIBRARY*/',get_plotlyjs()).replace('/*REPORT_DATA*/',json.dumps(payload,default=str).replace('</','<\\/'))
     (root/'dashboard/index.html').write_text(html)
+    # docs/index.html is the same build, served by GitHub Pages; keep it identical
+    # rather than hand-copied, so the hosted demo can never drift from the local one.
+    (root/'docs/index.html').write_text(html)
     return payload
 
 
