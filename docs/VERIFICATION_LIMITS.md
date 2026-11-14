@@ -12,7 +12,7 @@ Implemented and tested locally:
 
 Provided, but not claimed as locally/operationally verified:
 
-- Docker compose operation locally: Docker is not installed in this environment. The image build passed on a GitHub Linux runner.
+- Docker compose operation locally: not run locally for this review pass. The image build passed on a GitHub Linux runner.
 - GitHub Linux verification has passed Python 3.12/3.14 tests, the image build, and the complete real-data pipeline/release/test job. See linked workflow evidence for the exact commit.
 - Independent operating-system installation, sustained load, multiple replicas, TLS ingress, durable production observability and disaster recovery.
 - Real customer intervention effectiveness, current-cohort validity, bank integration and business savings.

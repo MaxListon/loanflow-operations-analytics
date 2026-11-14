@@ -117,9 +117,9 @@ The downloadable portfolio archive excludes the raw records and processed databa
 - Baselines include constant training prevalence and a smoothed current-state model. Calibration, Brier score, ranking, review capacity and application bootstrap uncertainty are reported.
 - Scenario results measure application-days, not employee workdays or financial savings.
 
-## Portfolio materials
+## Further documentation
 
-[Resume bullets and interview guide](docs/PORTFOLIO_GUIDE.md) · [Eight-week learning and extension roadmap](docs/EIGHT_WEEK_ROADMAP.md) · [Data dictionary](docs/DATA_DICTIONARY.md) · [Technical decisions](docs/DECISIONS.md)
+[Data dictionary](docs/DATA_DICTIONARY.md) · [Technical decisions](docs/DECISIONS.md)
 
 ## Source and attribution
 
