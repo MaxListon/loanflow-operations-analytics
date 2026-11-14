@@ -27,7 +27,7 @@ An end-to-end portfolio project built with **Python, DuckDB SQL, scikit-learn, P
 | Simple state-only baseline | Test ROC AUC 0.652; Brier 0.207 vs. selected model 0.203 | The additional model benefit is modest; weigh maintenance cost |
 | Mechanical 25% A_Complete compression | Resolved-case median changes from 19.1 to 16.5 days | A scenario to investigate, not a proven reduction or realized saving |
 
-**No operational improvement was implemented.** Outcomes are historical, and the scenario preserves observed outcomes. A_Pending is treated as an operational endpoint, not proof of loan disbursement.
+**No operational improvement was implemented.** Outcomes are historical, and the scenario preserves what was actually observed. A_Pending counts here as an operational endpoint — it isn't proof the loan was disbursed.
 
 ## Version 2: deeper evidence, not inflated accuracy
 
@@ -59,7 +59,7 @@ python -m loanflow.release
 python scripts/smoke_service.py
 ```
 
-The API/release/locking modules have **95% measured line coverage** in the local suite. Docker and GitHub CI configuration are provided. The Linux image build and full real-data rebuild passed in GitHub CI; Docker is unavailable locally. This is a hardened historical-replay/pilot scaffold, not a certified live banking production deployment.
+The API/release/locking modules have **95% measured line coverage** in the local suite. Docker and GitHub CI configuration are provided. The Linux image build and full real-data rebuild passed in GitHub CI; Docker is unavailable locally. Think of this as a hardened historical-replay/pilot scaffold rather than a certified, live banking production deployment.
 
 ## Reproduce the project
 
@@ -88,7 +88,7 @@ The executed notebook at `notebooks/01_decision_analysis.ipynb` includes real qu
 
 ![LoanFlow source-to-decision architecture](docs/architecture.svg)
 
-The application mart has one row per application. Offers are aggregated before joining. Application-state time is built from application events only, capped at the first operational endpoint. Raw workflow events remain available for audit; they are not misinterpreted as independent process stages.
+The application mart has one row per application. Offers are aggregated before joining. Application-state time is built from application events only, capped at the first operational endpoint. Raw workflow events stay available for audit, but they're kept separate so they don't get mistaken for independent process stages.
 
 ## Project structure
 
